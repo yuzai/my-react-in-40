@@ -1,0 +1,23 @@
+.wrapper{
+  // display:flex;
+  // align-items: center;
+  // justify-content: center;
+  // height:500px;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  text-align: center;
+}
+.like-btn{
+  margin:10px;
+  background-color:grey;
+  opacity: 1;
+  border:0px;
+  width:10%;
+  height:10%;
+}
+.like-text{
+  color:black;
+}
