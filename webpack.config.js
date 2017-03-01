@@ -2,13 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  context:path.resolve(__dirname,'./src'),
+  context:path.resolve(__dirname,'./virtualdom'),
   entry:{
     index:'./index.js'
   },
   output:{
     filename:'[name].bundle.js',
-    path:path.resolve(__dirname,'./dist'),
+    path:path.resolve(__dirname,'./dist2'),
     publicPath:'/',
   },
   plugins:[
@@ -29,7 +29,8 @@ module.exports = {
         use:[{
           loader:'babel-loader',
           options:{
-            presets:['es2015']
+            presets:['es2015'],
+            plugins: ["transform-react-jsx"]
           },
         }],
         exclude:/node_modules/
